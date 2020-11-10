@@ -6,6 +6,7 @@ div {
     height: 300;
     width: 400px;
     overflow: scroll;
+    margin-left: 50px;
 }
 
 table {
@@ -13,8 +14,6 @@ table {
     border-collapse: collapse;
     width: 750px;
     text-align: left;
-    margin: 60px;
-    margin-right: 100px;
 }
 
 tr, td, th {
