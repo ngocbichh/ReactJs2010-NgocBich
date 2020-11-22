@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Pet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="card__container">
+            <div class="pet">
+                <div class="pet__title">
+                    <i class="fas fa-paw"></i>
+                    pupassure
+                </div>
+
+                <div class="pet__img">
+                    <img src="dog.png" alt="dog">
+                </div>
+            </div>
+            <div class="form">
+                <div class="form__container">
+                    <p>Yay, puppies! Ensure your pup gets the best care!</h1>
+
+                    <div class="row">
+                        <div class="pet__name">
+                            <label for="pet__name">Name</label>
+                            <input type="text" id="pet__name" placeholder="Pet's name">
+                        </div>
+    
+                        <div class="pet__upload">
+                            <button id="pet__upload">
+                                <i class="fas fa-camera-retro"></i>
+                            </button>
+                            <label for="pet__upload">Upload a photo</label>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="pet__breed">
+                            <label for="pet__breed">Name</label>
+                            <input type="text" id="pet__breed" placeholder="Pet's bread">
+                        </div>
+    
+                        <div class="pet__birthday">
+                            <label for="pet__birthday">Name</label>
+                            <input type="date" id="pet__birthday" placeholder="MM/DD/YYYY">
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="pet__gender">
+                            <label for="pet__gender">Gender</label>
+                            <div class="pet__gender--radio">
+                                <input type="radio" id="pet__gender--female" name="pet-gender" value="female" checked>
+                                <label for="pet__gender--female">Female</label>
+    
+                                <input type="radio" id="pet__gender--male" name="pet-gender" value="male" >
+                                <label for="pet__gender--male">Male</label>
+                            </div>
+                        </div>
+    
+                        <div class="pet__son">
+                            <label for="pet__son">Spayed or Neutered</label>
+                            <div class="pet__son--radio">
+                                <input type="radio" id="pet__son--spayed" name="pet-son" value="spayed" checked>
+                                <label for="pet__son--spayed">Spayed</label>
+    
+                                <input type="radio" id="pet__son--neutered" name="pet-son" value="neutered" >
+                                <label for="pet__son--neutered">Neutered</label>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <label for="pet__weight">Weight</label>
+                        <div class="pet__weight--radio">
+                            <input type="radio" id="pet__weight--0-25" name="pet__weight" value="0-25" checked>
+                            <label for="pet__weight--0-25">0-25 lbs</label>
+    
+                            <input type="radio" id="pet__weight--25-50" name="pet__weight" value="25-50">
+                            <label for="pet__weight--25-50">25-50 lbs</label>
+    
+                            <input type="radio" id="pet__weight--50-100" name="pet__weight" value="50-100">
+                            <label for="pet__weight--50-100">50-100 lbs</label>
+    
+                            <input type="radio" id="pet__weight--100-plus" name="pet__weight" value="100+">
+                            <label for="pet__weight--100-plus">100+ lbs</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form__btn">
+                    <button class="btn--white">Back</button>
+                    <button class="btn--color">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

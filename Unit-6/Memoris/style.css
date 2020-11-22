@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nothing You Could Do', cursive;
+}
+
+.memories {
+    width: 700px;
+    height: 800px;
+    position: relative;
+    background-color: #f1f1f1;
+}
+
+.card {
+    width: 280px;
+    height: 350px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.card__img {
+    width: 100%;
+    height: 85%;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__content {
+    padding-top: 10px;
+    height: 15%;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    align-items: center;
+    background-color: #fff;
+}
+
+.los-angeles {
+    top: 260px;
+    left: 80px;
+    z-index: 2;
+    transform: rotate(-10deg);
+}
+
+.london {
+    top: 30px;
+    left: 130px;
+    transform: rotate(-2deg);
+}
+
+.venice {
+    top: 180px;
+    left: 320px;
+    z-index: 3;
+    transform: rotate(10deg);
+}
+
+.berlin {
+    top: 400px;
+    left: 250px;
+    z-index: 1;
+    transform: rotate(-5deg);
+}
+
+.card__opacity {
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+    position: absolute;
+    z-index: 4;
+    opacity: 0.6;
+}
+
+.card::before {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background-color: rgba(204, 204, 204, 0.418);
+}
+
+.card:hover::before{
+    z-index: -1;
+}
+
+.card:hover {
+    z-index: 4;
+    transform: rotate(0);
+}
