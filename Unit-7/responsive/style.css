@@ -133,3 +133,51 @@
 .lorem .col-md-10 .col-md-4 .icon .glyphicon-envelope {
     color: #f5db82;
 }
+
+.lorem-header {
+    padding: 50px 0 10px 0;
+}
+
+.lorem-content {
+    padding:10px 0 50px 0;
+}
+
+.slide__container {
+    height: 600px;
+    background-color:  #f5db82;
+}
+
+.slide__container .col-md-2 {
+    height: 100%;
+}
+
+.slide__container .col-md-8 {
+    height: 100%;
+}
+
+.carousel-inner {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 70px 0;
+}
+.carousel-inner .item img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+.carousel-inner .item .content {
+    background-color: #fff;
+    padding: 40px 60px;
+}
+.carousel-inner .item .content h5 {
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.carousel-inner .item .content p {
+    margin-top: 20px;
+    color: #949aa8;
+    font-size: 18px;
+}
