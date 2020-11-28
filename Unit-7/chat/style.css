@@ -1,0 +1,334 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.conv {
+    width: 100%;
+    height: 100%;
+    background-color: #c9dbe7;
+}
+
+.conv__container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px 200px;
+    display: flex;
+}
+
+.conv__left {
+    width: 25%;
+    height: 100%;
+    background-color: #454753;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+}
+
+.conv__left > ul {
+    list-style-type: none;
+}
+
+.conv__item {
+    width: 100%;
+    height: 75px;
+    padding: 15px 10px;
+}
+.conv__item:first-child {
+    height: 95px;
+}
+
+.conv__item .search {
+    height: 100%;
+    width: 100%;
+    padding: 5px 0 20px 0;
+}
+
+.conv__item .search > form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.search input[type="search"] {
+    padding: 5px 10px;
+    font-size: 17px;
+    border: none;
+    width: 80%;
+    border-radius: 5px 0 0 5px;
+    background-color: #696c73;
+    color: #fff;
+    outline: none;
+}
+
+.search button {
+    background-color: #696c73;
+    width: 20%;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.conv__item .user{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.conv__item .user .user__avatar {
+    width: 20%;
+    height: 100%;
+}
+
+.conv__item .user .user__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.conv__item .user .user__info {
+    padding: 3px 8px;
+}
+
+.conv__item .user .user__info .user__name {
+    font-size: 17px;
+    color: #e1e1e9;
+}
+
+.conv__item .user .user__info .user__state {
+    font-size: 14px;
+    color: #858891;
+}
+
+.icon--active {
+    font-size: 10px;
+    color: #90bb6c;
+    padding-right: 8px;
+}
+
+.icon--offline {
+    font-size: 10px;
+    color: #e48b61;
+    padding-right: 8px;
+}
+
+.conv__right {
+    width: 70%;
+    height: 865px;
+    border-radius: 0 10px 10px 0;
+    background-color: #f4f5fa;
+    box-shadow: 0px 2px 2px 0 gray;
+}
+
+.conv__header {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    padding: 20px 35px;
+    border-bottom: 5px solid #fff;
+}
+
+.conv__header__user {
+    width: 95%;
+    height: 100%;
+    display: flex;
+}
+
+.conv__header__user .user__img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #90bb6c;
+}
+
+.conv__header__user .user__img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform: scale(1.4,1.4);
+}
+
+.conv__header__user .user__content {
+    height: 100%;
+    padding: 10px;
+}
+
+.conv__header__user .user__content .user__content__name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #44454a;
+}
+
+.conv__header__user .user__content .user__content__state {
+    font-size: 18px;
+    color: #a6a7ac;
+}
+
+.conv__header__star {
+    width: 5%;
+    height: 100%;
+    line-height: 70px;
+    text-align: center;
+    align-items: center;
+    color: #dadbe0;
+    font-size: 18px;
+}
+
+.conv__main {
+    height: 555px;
+    padding: 20px 35px;
+}
+
+.conv__main .message {
+    width: 56%;
+    height: auto;
+    padding-bottom: 15px;
+}
+
+.conv__main .message .info {
+    color: #6e6f74;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.conv__main .message .sender {
+    text-align: left;
+}
+
+.conv__main .message .sender > span > i {
+    padding-right: 5px;
+}
+
+.conv__main .message .datetime {
+    color: #bbbcc1;
+    padding: 0 5px;
+    font-size: 15px;
+}
+
+.conv__main .message .mess {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+}
+
+.conv__main .message .mess p{
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    position: relative;
+    font-size: 18px;
+    color: #f3fef2;
+    border-radius: 5px;
+}
+
+.conv__main .message .sender__mess p {
+    background-color: #91ba78;
+}
+
+.conv__main .message .sender__mess p::before {
+    left: 5%;
+}
+
+.conv__main .message .mess p::before {
+    bottom: 100%;
+	border: solid ;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+    pointer-events: none;
+    border-color: rgba(193, 26, 56, 0);
+	border-bottom-color: #91ba78;
+	border-width: 15px;
+}
+
+.conv__main .send {
+   float: left;
+}
+
+.conv__main .receive {
+    float: right;
+}
+
+.conv__main .message .receiver {
+    text-align: right;
+}
+
+.conv__main .message .receiver__mess p {
+    background-color: #9dc3e8 ;
+}
+
+.conv__main .message .receiver__mess p::before {
+    right: 5%;
+    border-bottom-color: #9dc3e8;
+}
+
+.conv__main .message .receiver > span > i {
+    padding-left: 10px;
+}
+
+.conv__main .message .entering i:nth-child(2){
+    opacity: 0.6;
+}
+
+.conv__main .message .entering :last-child{
+    opacity: 0.3;
+}
+
+.conv__chat {
+    height: 190px;
+    border-top: 5px solid #fff;
+}
+
+.conv__chat .chat__container > form {
+    padding: 30px 35px;
+}
+
+.conv__chat .chat__container > form > textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 10px;
+    resize: none;
+}
+
+.conv__chat .chat__container > form > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+
+.conv__chat .chat__container > form > div .upfile{
+    height: 20px;
+    position: relative;
+}
+
+.conv__chat .chat__container > form > div .upfile label {
+    width: 30px;
+    height: 20px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.conv__chat .chat__container > form > div .upfile input {
+    display: none;
+}
+
+.conv__chat .chat__container > form .send button {
+    width: 50px;
+    float: right;
+    background-color: rgba(193, 26, 56, 0);
+    outline: none;
+    color: #b1c5db;
+    font-weight: bold;
+    border: none;
+    font-size: 20px;
+}
